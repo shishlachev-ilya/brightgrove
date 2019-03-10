@@ -1,0 +1,58 @@
+%ellipsis {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+%title-default {
+    margin: 0;
+    font-weight: normal;
+}
+
+%btn-default {
+    position: relative;
+
+    display: inline-block;
+    float: left;
+    padding: 0 56px;
+    height: 47px;
+
+    @include font(14px, $f-regular, $c-white);
+    line-height: 47px;
+
+    border-radius: 25px;
+    outline: none;
+    background: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .35s ease;
+
+    &:before {
+        content: attr(data-text);
+        position: absolute;
+        color: inherit;
+        top: -47px;
+    }
+
+    &:hover {
+        text-decoration: none;
+        line-height: 140px;
+    }
+
+    &:active {
+        outline: none;
+    }
+}
+
+%btn-transparent {
+    @extend %btn-default;
+    border: 1px solid $c-white;
+    background: transparent;
+}
+
+%btn-blue {
+    @extend %btn-default;
+    border: 1px solid transparent;
+    background: linear-gradient(180.55deg, #4964BD 1.83%, #233488 195.09%);
+}

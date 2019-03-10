@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/app.css">
+</head>
+<body>
+
+
+<div class="wrapper">
+
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-9 col-sm-6 col-md-4 col-lg-3">
+                    <h1 class="logo">
+                        <a href="#" class="logo__link">
+                            <img class="logo__icon" src="src/img/logo.png" alt="Eerlijke">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col">
+                    <nav>
+                        <ul class="nav-list">
+                            <li class="nav-list__item">
+                                <a href="#" class="nav-list__link active">HOME</a>
+                            </li>
+                            <li class="nav-list__item dropdown">
+                                <a href="#" class="nav-list__link">ALLES OVER WOZ</a>
+                                <ul class="dropdown-list">
+                                    <li class="dropdown-list__item">
+                                        <a href="#" class="dropdown-list__link">link-1</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a href="#" class="dropdown-list__link">link-2</a>
+                                    </li>
+                                    <li class="dropdown-list__item">
+                                        <a href="#" class="dropdown-list__link">link-3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#" class="nav-list__link">WOZ-NIEUWS</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#" class="nav-list__link">Gemeentes</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#" class="nav-list__link">OVER ONS</a>
+                            </li>
+                            <li class="nav-list__item">
+                                <a href="#" class="nav-list__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="burger">
+                        <div class="burger__box">
+                            <span class="burger__line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main-slider">
+            <div class="form-wrapper">
+                <form class="form">
+                    <div class="form-head">
+                        <h2 class="form-head__title">Doe hier de gratis WOZ Check.</h2>
+                    </div>
+
+                    <div class="form-desc">
+                    <span class="form-desc__text">
+                        Een taxatie van de WOZ-waarde van uw woning binnen enkele stappen. Bekijk hier direct uw
+                        mogelijke besparing en maak eventueel gratis bezwaar.
+                    </span>
+                    </div>
+
+                    <div class="select" data-title="Woonsituatie:" data-type="select">
+                        <span class="select__head">Ik ben de (mede-) eigenaar.</span>
+                        <ul class="select__list">
+                            <li class="select__item">Ik ben de (mede-) eigenaar.</li>
+                            <li class="select__item">Lorem ipsum dolor.</li>
+                            <li class="select__item">Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+
+                    <div class="form-wrap">
+                        <div class="form-wrap__box" data-title="Postcode">
+                            <input type="text" class="form-wrap__field" placeholder="0000 AA" required>
+                        </div>
+
+                        <div class="form-wrap__box" data-title="Huisnummer">
+                            <input type="text" class="form-wrap__field" placeholder="00" required>
+                        </div>
+
+                        <div class="form-wrap__box" data-title="Toevoeging">
+                            <input type="text" class="form-wrap__field" placeholder="-" required>
+                        </div>
+                    </div>
+
+                    <div class="form-btn">
+                        <button data-text="Gratis check" class="form-btn__submit" type="submit">Gratis check</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-box">
+                            <div class="carousel-box-head">
+                                <h2 class="carousel-box-head__title">1,6 miljoen te hoge WOZ-waardes in 2019 </h2>
+                            </div>
+
+                            <div class="carousel-box-desc">
+                                <p class="carousel-box-desc__text">
+                                    Wist u dat er een grote kans bestaat dat u te veel belasting betaalt door een te
+                                    hoge WOZ-waarde? Dat blijkt uit ons landelijk WOZ-onderzoek. Controleer uw
+                                    WOZ-waarde eenvoudig en snel met onze gratis WOZ Check. U ziet dan direct hoeveel u
+                                    kunt besparen.
+                                </p>
+                            </div>
+
+                            <div class="carousel-box-links">
+                                <a href="#" data-text="Doe de WOZ Check" class="carousel-box-links__item">Doe de WOZ Check</a>
+
+                                <a href="#" data-text="Bekijk ons onderzoek" class="carousel-box-links__item">Bekijk ons onderzoek</a>
+                            </div>
+                        </div>
+                        <img class="d-block w-100" src="src/img/slider.jpg" alt="First slide">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="properties">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="section-head">
+                            <h3 data-head="Een Eerlijke WOZ" class="section-head__title">Een Eerlijke WOZ</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flex-column flex-lg-column flex-xl-row">
+                    <div class="col">
+                        <div class="properties-desc">
+                            <p class="properties-desc__text">
+                                U betaalt ieder jaar belasting op basis van de WOZ-waarde van uw huis. Maar zonder een
+                                grondige taxtie van uw WOZ-waarde weet u eigenlijk niet zeker of u te veel betaalt.
+                            </p>
+
+                            <p class="properties-desc__text">
+                                Met de WOZ Check van Eerlijke WOZ doet u gratis en snel een WOZ-taxatie van uw woning op
+                                basis van een door ons zorgvuldig ontwikkeld taxatiesysteem. Wijkt de uitkomst sterk af
+                                van uw WOZ-waarde? Dan is uw WOZ-waarde waarschijnlijk onjuist en kunt u direct gratis
+                                bezwaar maken.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="properties-box">
+                            <div class="properties-item">
+                                <div class="properties-item-img">
+                                    <img src="src/img/properties/icon_1.svg" alt="Binnen één minuutje">
+                                </div>
+
+                                <div class="properties-item-head">
+                                    <h4 class="properties-item-head__title">Binnen één minuutje</h4>
+                                </div>
+
+                                <div class="properties-item-desc">
+                                    <p class="properties-item-desc__text">
+                                        Omdat wij niet meer informatie vragen dan strikt noodzakelijk is, bent u zo
+                                        klaar. Uw WOZ-waarde controleren en aanmelden voor een bezwaar ging nog
+                                        nooit zo snel.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="properties-item">
+                                <div class="properties-item-img">
+                                    <img src="src/img/properties/icon_1.svg" alt="Volledig gratis">
+                                </div>
+
+                                <div class="properties-item-head">
+                                    <h4 class="properties-item-head__title">Volledig gratis</h4>
+                                </div>
+
+                                <div class="properties-item-desc">
+                                    <p class="properties-item-desc__text">
+                                        Er worden voor onze diensten nooit kosten in rekening gebracht door ons of
+                                        uw gemeente. Of het nu gaat om de WOZ Check, een WOZ bezwaar of een
+                                        eventuele beroepsprocedure.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="properties-item">
+                                <div class="properties-item-img">
+                                    <img src="src/img/properties/icon_3.svg" alt="Volledig vrijblijvend">
+                                </div>
+
+                                <div class="properties-item-head">
+                                    <h4 class="properties-item-head__title">Volledig vrijblijvend</h4>
+                                </div>
+
+                                <div class="properties-item-desc">
+                                    <p class="properties-item-desc__text">
+                                        U kunt uw inschrijving bij ons altijd direct stopzetten. Op die manier weten
+                                        wij zeker dat u altijd tevreden over onze dienstverlening.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="properties-item">
+                                <div class="properties-item-img">
+                                    <img src="src/img/properties/icon_4.svg" alt="Transparant & persoonlijk">
+                                </div>
+
+                                <div class="properties-item-head">
+                                    <h4 class="properties-item-head__title">Transparant & persoonlijk</h4>
+                                </div>
+
+                                <div class="properties-item-desc">
+                                    <p class="properties-item-desc__text">
+                                        Informatie en communicatie van Eerlijke WOZ is altijd duidelijk en
+                                        begrijpelijk. Zo blijft u altijd goed geïnformeerd over onze adviezen en
+                                        procedures.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="properties-box-links">
+                                <a href="#" data-text="Onze werkwijze" class="properties-box-links__item">Onze werkwijze</a>
+
+                                <a href="#" data-text="Proceskostenvergoeding" class="properties-box-links__item">Proceskostenvergoeding</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-xl-3">
+                        <div class="cards-item">
+                            <div class="cards-item-img">
+                                <img src="src/img/houses/house_1.png" alt="Eigen Woning">
+                            </div>
+
+                            <div class="cards-item-head">
+                                <h4 class="cards-item-head__title">Eigen Woning</h4>
+                            </div>
+
+                            <div class="cards-item-desc">
+                                <span class="cards-item-desc__text">
+                                    Bij een verlaging van de WOZ-waarde met € 50.000, bespaart u op OZB,
+                                    watersysteemheffing en inkomstenbelasting:
+                                </span>
+                            </div>
+
+                            <div class="cards-item-price">
+                                <span class="cards-item-price__text">€ 177 tot € 296</span>
+                            </div>
+
+                            <a href="#" class="cards-item-link">
+                                <span class="cards-item-link__text">Gratis check</span>
+
+                                <svg
+                                    width="7"
+                                    height="16"
+                                    viewBox="0 0 11 16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.5 0L0 2.5L5.5 8L0 13.5L2.5 16L10.5 8L2.5 0Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-3">
+                        <div class="cards-item">
+                            <div class="cards-item-img">
+                                <img src="src/img/houses/house_2.png" alt="Erfenis of schenking">
+                            </div>
+
+                            <div class="cards-item-head">
+                                <h4 class="cards-item-head__title">Erfenis of schenking</h4>
+                            </div>
+
+                            <div class="cards-item-desc">
+                                <span class="cards-item-desc__text">
+                                    Bij een verlaging van de WOZ-waarde met € 50.000, bespaart u op OZB,
+                                    watersysteemheffing en inkomstenbelasting:
+                                </span>
+                            </div>
+
+                            <div class="cards-item-price">
+                                <span class="cards-item-price__text">€ 177 tot € 296</span>
+                            </div>
+
+                            <a href="#" class="cards-item-link">
+                                <span class="cards-item-link__text">Gratis check</span>
+
+                                <svg
+                                    width="7"
+                                    height="16"
+                                    viewBox="0 0 11 16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.5 0L0 2.5L5.5 8L0 13.5L2.5 16L10.5 8L2.5 0Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-3">
+                        <div class="cards-item">
+                            <div class="cards-item-img">
+                                <img src="src/img/houses/house_3.png" alt="Tweede woning">
+                            </div>
+
+                            <div class="cards-item-head">
+                                <h4 class="cards-item-head__title">Tweede woning</h4>
+                            </div>
+
+                            <div class="cards-item-desc">
+                                <span class="cards-item-desc__text">
+                                    Bij een verlaging van de WOZ-waarde met € 50.000, bespaart u op OZB,
+                                    watersysteemheffing en inkomstenbelasting:
+                                </span>
+                            </div>
+
+                            <div class="cards-item-price">
+                                <span class="cards-item-price__text">€ 177 tot € 296</span>
+                            </div>
+
+                            <a href="#" class="cards-item-link">
+                                <span class="cards-item-link__text">Gratis check</span>
+
+                                <svg
+                                    width="7"
+                                    height="16"
+                                    viewBox="0 0 11 16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.5 0L0 2.5L5.5 8L0 13.5L2.5 16L10.5 8L2.5 0Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-3">
+                        <div class="cards-item">
+                            <div class="cards-item-img">
+                                <img src="src/img/houses/house_4.png" alt="Verhuurder">
+                            </div>
+
+                            <div class="cards-item-head">
+                                <h4 class="cards-item-head__title">Verhuurder</h4>
+                            </div>
+
+                            <div class="cards-item-desc">
+                                <span class="cards-item-desc__text">
+                                    Bij een verlaging van de WOZ-waarde met € 50.000, bespaart u op OZB,
+                                    watersysteemheffing en inkomstenbelasting:
+                                </span>
+                            </div>
+
+                            <div class="cards-item-price">
+                                <span class="cards-item-price__text">€ 177 tot € 296</span>
+                            </div>
+
+                            <a href="#" class="cards-item-link">
+                                <span class="cards-item-link__text">Gratis check</span>
+
+                                <svg
+                                    width="7"
+                                    height="16"
+                                    viewBox="0 0 11 16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.5 0L0 2.5L5.5 8L0 13.5L2.5 16L10.5 8L2.5 0Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="properties properties_woman">
+            <div class="container-fluid">
+                <div class="row flex-lg-column flex-xl-row">
+                    <div class="col">
+                        <div class="section-head">
+                            <h3 class="section-head__title">Het Jaarlijkse WOZ Onderzoek</h3>
+                        </div>
+
+                        <div class="properties-desc">
+                            <p class="properties-desc__text">
+                                Eerlijke WOZ heeft voor het jaar 2019 onderzocht of de WOZ-waarde van woningen in
+                                Nederland juist zijn.
+                            </p>
+
+                            <p class="properties-desc__text">
+                                Op basis van ons taxatiesysteem, dat wij conform de Wet WOZ en jurisprudentie hebben
+                                ontworpen, hebben wij de eerlijke WOZ-waarde berekend en die vergeleken met de
+                                WOZ-waarde van de gemeente. Bij een grote afwijking nemen wij aan dat de WOZ-waarde
+                                zoals door gemeente is vastgesteld onjuist is.
+                            </p>
+                        </div>
+
+                        <div class="properties-btn">
+                            <button data-text="Bekijk de uitkomsten" class="properties-btn__link">Bekijk de uitkomsten</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container-fluid">
+                <div class="row flex-column flex-lg-row">
+                    <div class="col-12 col-lg-3">
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    <img src="./src/img/logo.png" alt="logo">
+                                </a>
+                            </li>
+                            <li class="footer-list__item">
+                                Iedereen verdient eeneerlijke WOZ-waarde. Met onze WOZ Check voorkomt u gratis en
+                                eenvoudig dat u te veel betaalt.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-lg-2">
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <h6 class="footer-list__head">Eerlijke WOZ</h6>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">Eerlijke WOZ</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">WOZ-Nieuws</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">Gemeentes</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">Over ons</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-lg-2">
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <h6 class="footer-list__head">Over WOZ</h6>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">Wat is WOZ</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">WOZ Verlagen</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">WOZ Verhogen</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">WOZ Bezwaar</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-lg-2">
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <h6 class="footer-list__head">Handige Links</h6>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">Veelgestelde vragen</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">Jaarlijks WOZ-onderzoek</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">Doe de gratis WOZ-check</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-lg-3">
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <h6 class="footer-list__head">Inschrijven nieuwsbrief</h6>
+                            </li>
+                            <li class="footer-list__item">
+                                Blijf op de hoogte over belangrijk WOZ nieuws en onze dienstverlening.
+                            </li>
+                            <li class="footer-list__item">
+                                <form class="footer-form">
+                                    <input type="text" class="footer-form__field" placeholder="Uw email..." required>
+
+                                    <button type="submit" data-text="Verzenden" class="footer-form__btn">Verzenden</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-xl-3">
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__link">
+                                    <svg width="9" height="20" viewBox="0 0 9 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M9 6.49143L8.64532 10.0114H5.94089V20H1.9064V10.0114H0V6.49143H1.9064V4.20571C1.9064 3.55047 2.00985 2.94857 2.21675 2.4C2.48276 1.68381 2.88916 1.12762 3.43596 0.731429C4.10099 0.243807 4.94334 0 5.96305 0L8.95566 0.0228571V3.45143H6.78325C6.56158 3.45143 6.37685 3.51238 6.22906 3.63429C6.03694 3.80191 5.94089 4.06095 5.94089 4.41143V6.49143H9Z"
+                                              fill="#233488"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__link">
+                                    <svg width="25" height="20" viewBox="0 0 25 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M25 2.36287C24.296 3.39429 23.4399 4.27566 22.4315 5.00703V5.65401C22.4315 7.34178 22.1176 9.02953 21.4897 10.7173C20.8238 12.4426 19.8916 13.9803 18.6929 15.3305C17.3992 16.7745 15.8771 17.8997 14.1267 18.706C12.2051 19.5687 10.1218 20 7.87671 20C6.44976 20 5.06089 19.8031 3.71005 19.4093C2.39725 19.0342 1.16058 18.481 0 17.7496C0.399545 17.7872 0.808598 17.8059 1.22717 17.8059C2.40678 17.8059 3.53881 17.6184 4.62329 17.2433C5.70777 16.8683 6.6971 16.3432 7.59132 15.6681C6.48782 15.6306 5.49848 15.2883 4.62329 14.6413C3.74809 13.9944 3.14878 13.1646 2.82534 12.1519C3.12976 12.2082 3.44368 12.2363 3.76712 12.2363C4.22375 12.2363 4.67085 12.18 5.10845 12.0675C4.34741 11.9175 3.65297 11.6034 3.02511 11.1252C2.39726 10.647 1.90735 10.0563 1.55537 9.35302C1.20338 8.64979 1.01788 7.90436 0.998858 7.11674V7.03235C1.72185 7.44492 2.5019 7.66057 3.33904 7.67933C2.63508 7.2105 2.07858 6.60572 1.66952 5.86498C1.26046 5.12423 1.05594 4.32255 1.05594 3.45992C1.05594 2.55977 1.28424 1.7159 1.74087 0.92827C3.03463 2.48477 4.58523 3.72245 6.39269 4.64135C8.23821 5.579 10.2074 6.10408 12.3002 6.2166C12.2241 5.84154 12.1861 5.4571 12.1861 5.06329C12.1861 4.14439 12.4144 3.30052 12.871 2.53165C13.3276 1.76277 13.9507 1.14862 14.7403 0.68917C15.5299 0.229721 16.3813 0 17.2945 0C18.0175 0 18.7024 0.140646 19.3493 0.421941C19.9962 0.703236 20.5575 1.09704 21.0331 1.60338C22.1937 1.37834 23.2782 0.965779 24.2865 0.365682C24.0963 0.965779 23.8061 1.50492 23.4161 1.98312C23.0261 2.46132 22.5647 2.85982 22.032 3.17862C23.0784 3.04735 24.0677 2.77544 25 2.36287Z"
+                                              fill="#233488"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__link">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M14.1743 7.15394H19.9771V16.1364C19.9771 16.8373 19.8012 17.4849 19.4495 18.0791C19.0979 18.6734 18.6239 19.1419 18.0275 19.4848C17.4312 19.8276 16.7813 19.999 16.078 19.999H3.92202C3.21865 20.0143 2.56881 19.8467 1.97248 19.4962C1.37614 19.1458 0.89832 18.6734 0.538991 18.0791C0.179662 17.4849 0 16.8373 0 16.1364V7.1768H5.80275C4.82415 8.65483 4.61009 10.1938 5.16055 11.7937C5.54282 12.8756 6.22324 13.7289 7.20183 14.3536C7.84404 14.7803 8.53593 15.0431 9.27752 15.1421C10.0191 15.2412 10.7492 15.184 11.4679 14.9707C12.1865 14.7574 12.8287 14.3993 13.3945 13.8965C13.9602 13.3936 14.3884 12.7842 14.6789 12.068C15 11.2909 15.13 10.4986 15.0688 9.69097C14.9924 8.8072 14.6942 7.96153 14.1743 7.15394ZM2.47706 4.93691V0.617113C2.47706 0.449502 2.49235 0.34665 2.52294 0.308557C2.55352 0.270463 2.66055 0.220942 2.84404 0.159992L3.05046 0.11428V4.93691H3.87615V0.0228561H4.40367V4.93691H5.22936V0H16.078C16.7661 0 17.4044 0.171419 17.9931 0.514261C18.5818 0.857104 19.0558 1.31803 19.4151 1.89705C19.7745 2.47608 19.9618 3.1008 19.9771 3.77125C19.9924 4.15219 20 4.6093 20 5.14261C19.9847 6.27018 19.9771 6.73492 19.9771 6.53683H13.8303C13.6927 6.53683 13.5856 6.49112 13.5092 6.3997C12.8364 5.7902 12.0795 5.37879 11.2385 5.16547C10.3975 4.95214 9.55658 4.95595 8.7156 5.1769C7.87461 5.39784 7.11774 5.81305 6.44495 6.42255C6.3685 6.49874 6.29205 6.53683 6.2156 6.53683H0.137615L0.0229358 6.51398V5.64545C0.00764518 5.82829 0 5.47784 0 4.59407C0 4.18266 0.0152904 3.8322 0.0458716 3.54269C0.122325 2.43035 0.634552 1.5085 1.58257 0.777106L1.67431 0.75425V4.93691H2.47706ZM18.1651 4.43407V2.30846C18.1651 2.11037 18.1078 1.95419 17.9931 1.83991C17.8784 1.72563 17.7294 1.66849 17.5459 1.66849C16.8425 1.65325 16.1315 1.65325 15.4128 1.66849C15.2141 1.66849 15.0612 1.72944 14.9541 1.85134C14.8471 1.97324 14.7936 2.13323 14.7936 2.33132V4.43407C14.7936 4.63216 14.8509 4.78834 14.9656 4.90262C15.0803 5.0169 15.2294 5.07404 15.4128 5.07404H17.5229C17.7217 5.07404 17.8784 5.0169 17.9931 4.90262C18.1078 4.78834 18.1651 4.63216 18.1651 4.43407ZM10 14.0108C9.28134 14.0108 8.61621 13.8393 8.00459 13.4965C7.39296 13.1537 6.91132 12.6813 6.55963 12.0794C6.20795 11.4775 6.03211 10.8223 6.03211 10.1138C6.03211 9.40526 6.20795 8.75006 6.55963 8.14818C6.91132 7.5463 7.39296 7.06633 8.00459 6.70825C8.61621 6.35017 9.27752 6.17113 9.98853 6.17113C10.6995 6.17113 11.357 6.35017 11.961 6.70825C12.565 7.06633 13.0428 7.5463 13.3945 8.14818C13.7462 8.75006 13.922 9.40526 13.922 10.1138C13.922 10.8223 13.7462 11.4775 13.3945 12.0794C13.0428 12.6813 12.565 13.1537 11.961 13.4965C11.357 13.8393 10.7034 14.0108 10 14.0108ZM12.8899 10.1024C12.8899 9.5843 12.7599 9.10052 12.5 8.65102C12.2401 8.20151 11.8884 7.84725 11.445 7.58821C11.0015 7.32917 10.5161 7.19966 9.98853 7.19966C9.46101 7.19966 8.97554 7.32917 8.53211 7.58821C8.08868 7.84725 7.737 8.1977 7.47706 8.63959C7.21712 9.08147 7.08716 9.56526 7.08716 10.0909C7.08716 10.6166 7.21712 11.1004 7.47706 11.5423C7.737 11.9842 8.08868 12.3385 8.53211 12.6051C8.97554 12.8718 9.46101 13.0051 9.98853 13.0051C10.5161 13.0051 11.0015 12.8756 11.445 12.6165C11.8884 12.3575 12.2401 12.007 12.5 11.5652C12.7599 11.1233 12.8899 10.6357 12.8899 10.1024Z"
+                                              fill="#233488"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__link">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M10 0V0.0228571C11.8133 0.0228571 13.4971 0.472376 15.0514 1.37143C16.5599 2.25524 17.7561 3.45142 18.6399 4.96C19.5542 6.51429 20.0075 8.19809 19.9999 10.0114C19.9923 11.8248 19.539 13.5086 18.6399 15.0629C17.7561 16.5714 16.5599 17.7676 15.0514 18.6514C13.4971 19.5505 11.8133 20 10 20C8.18668 20 6.5029 19.5505 4.94862 18.6514C3.44005 17.7676 2.24389 16.5714 1.36008 15.0629C0.461038 13.5086 0.00771347 11.8248 9.4452e-05 10.0114C-0.00752456 8.19809 0.4458 6.51429 1.36008 4.96C2.24389 3.45142 3.44005 2.25524 4.94862 1.37143C6.5029 0.472376 8.18668 0.0152382 10 0ZM13.0857 14.7657L14.8685 5.76C14.8685 5.57714 14.8 5.47048 14.6628 5.44C14.5561 5.40952 14.419 5.41714 14.2514 5.46286L14.0457 5.53143L3.8972 9.50857C3.80577 9.55429 3.72577 9.61143 3.6572 9.68C3.58863 9.74857 3.56197 9.82857 3.5772 9.92C3.59244 10.0419 3.66863 10.1486 3.80577 10.24L4.01149 10.3543L6.52575 11.2L12.5828 7.36L12.7428 7.29143C12.8647 7.24571 12.9257 7.26857 12.9257 7.36L12.7885 7.56571L8.0343 11.8629V11.9086L9.58858 13.1429L12.1486 15.0857C12.3466 15.1771 12.5295 15.1924 12.6971 15.1314C12.8038 15.101 12.9028 15.0324 12.9943 14.9257C13.0247 14.8648 13.0552 14.8114 13.0857 14.7657Z"
+                                              fill="#233488"/>
+                                    </svg>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <div class="copy">
+                            <a href="#" class="copy__item">Privacy Policy</a>
+
+                            <a href="#" class="copy__item">Algemene Voorwaarden</a>
+
+                            <a href="#" class="copy__item">© Copyright 2018, Eerlijke WOZ B.V.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<div class="mobile-menu">
+    <ul class="nav-list nav-list_mobile">
+        <li class="nav-list__item nav-list__item_mobile">
+            <a href="#" class="nav-list__link nav-list__link_mobile">HOME</a>
+        </li>
+        <li class="nav-list__item nav-list__item_mobile">
+            <a href="#" class="nav-list__link nav-list__link_mobile">ALLES OVER WOZ</a>
+        </li>
+        <li class="nav-list__item nav-list__item_mobile">
+            <a href="#" class="nav-list__link nav-list__link_mobile">WOZ-NIEUWS</a>
+        </li>
+        <li class="nav-list__item nav-list__item_mobile">
+            <a href="#" class="nav-list__link nav-list__link_mobile">Gemeentes</a>
+        </li>
+        <li class="nav-list__item nav-list__item_mobile">
+            <a href="#" class="nav-list__link nav-list__link_mobile">OVER ONS</a>
+        </li>
+        <li class="nav-list__item nav-list__item_mobile">
+            <a href="#" class="nav-list__link nav-list__link_mobile">Contact</a>
+        </li>
+    </ul>
+</div>
+
+<script src="/dist/app.js"></script>
+</body>
+</html>

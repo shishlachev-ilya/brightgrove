@@ -1,0 +1,42 @@
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
+@mixin font($size, $family ,$color) {
+    font-size: calculateRem($size);
+    font-family: $family;
+    color: $color;
+    font-weight: normal;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+    &:-moz-placeholder {
+        @content
+    }
+    &::-moz-placeholder {
+        @content
+    }
+    &:-ms-input-placeholder {
+        @content
+    }
+}
+
+@mixin focus {
+    &:focus::-webkit-input-placeholder {
+        @content
+    }
+    &:focus:-moz-placeholder {
+        @content
+    }
+    &:focus::-moz-placeholder {
+        @content
+    }
+    &:focus:-ms-input-placeholder {
+        @content
+    }
+}
+

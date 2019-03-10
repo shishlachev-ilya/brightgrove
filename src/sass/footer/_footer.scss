@@ -1,0 +1,264 @@
+.footer {
+    &__top {
+        @media screen and ($m-extra-small) {
+            padding: 50px 0 0;
+        }
+
+        @media screen and ($m-small) {
+            padding: 50px 10px;
+        }
+
+        @media screen and ($m-medium) {
+            padding: 50px 4%;
+        }
+
+        @media screen and ($m-large) {
+            padding: 120px 5% 110px;
+        }
+
+        @media screen and ($m-extra-large) {
+            padding: 120px 6% 110px;
+        }
+    }
+
+    &__bottom {
+        background: linear-gradient(180deg, #2AAAE4 -84.96%, #2BA5E1 -84.96%, #3F51B5 72.92%);
+
+        @media screen and ($m-extra-small) {
+            padding: 23px 0;
+        }
+
+        @media screen and ($m-small) {
+            padding: 23px 10px;
+        }
+
+        @media screen and ($m-medium) {
+            padding: 23px 4%;
+        }
+
+        @media screen and ($m-large) {
+            padding: 23px 5%;
+        }
+
+        @media screen and ($m-extra-large) {
+            padding: 23px 6%;
+        }
+    }
+
+    &-list {
+        margin: 0;
+        padding: 0;
+
+        @media screen and ($m-extra-small) {
+            text-align: center;
+            margin: 0 0 30px;
+        }
+
+        @media screen and ($m-small) {
+            text-align: center;
+            margin: 0 0 30px;
+        }
+
+        @media screen and ($m-large) {
+            text-align: left;
+            margin: 0;
+        }
+
+        &__item {
+            @include font(16px, $f-sans-light, $c-gray);
+            line-height: 36px;
+            list-style: none;
+
+            &:first-child {
+                display: flex;
+                align-items: center;
+                margin: 0 0 20px;
+                min-height: 56px;
+
+                @media screen and ($m-extra-small) {
+                    margin: 0;
+                }
+
+                @media screen and ($m-small) {
+                    margin: 0;
+                }
+            }
+
+            img {
+                width: 100%;
+
+                @media screen and ($m-small) {
+                    max-width: 260px;
+                }
+
+                @media screen and ($m-large) {
+                    max-width: 100%;
+                }
+
+                @media screen and ($m-extra-large) {
+                    max-width: 260px;
+                }
+            }
+        }
+
+        &__head {
+            @extend %title-default;
+            margin: 0;
+            width: 100%;
+
+            @include font(16px, $f-regular, $c-blue);
+            line-height: 19px;
+        }
+
+        &__link {
+            width: 100%;
+            @include font(14px, $f-sans-regular, $c-link);
+            line-height: 36px;
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 0;
+        line-height: normal;
+
+        &__field {
+            padding: 14px;
+            margin: 0 0 15px;
+
+            @include font(14px, $f-regular, $c-input);
+            text-align: center;
+
+            border: 1px solid $c-input;
+            border-radius: 25px;
+            outline: none;
+            background: transparent;
+            box-sizing: border-box;
+
+            @include placeholder {
+                @include font(14px, $f-regular, $c-input);
+            }
+
+            @include focus {
+                opacity: 0;
+            }
+        }
+
+        &__btn {
+            @extend %btn-blue;
+            padding: 0 50px;
+        }
+    }
+}
+
+.social-list {
+    position: relative;
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    @media screen and ($m-extra-small) {
+        justify-content: center;
+    }
+
+    @media screen and ($m-small) {
+        justify-content: center;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -23px;
+        right: 0;
+        width: 100vw;
+        height: 72px;
+        background: $c-white;
+
+        @media screen and ($m-extra-small) {
+            right: -15px;
+        }
+
+        @media screen and ($m-small) {
+            right: -25px;
+        }
+
+        @media screen and ($m-medium) {
+            right: calc(-6% - 3px);
+        }
+    }
+
+    &__item {
+        position: relative;
+        z-index: 1;
+        list-style: none;
+
+        &:not(:last-child) {
+            @media screen and ($m-extra-small) {
+                margin: 0 15% 0 0;
+            }
+
+            @media screen and ($m-small) {
+                margin: 0 15% 0 0;
+            }
+
+            @media screen and ($m-large) {
+                margin: 0 15% 0 0;
+            }
+
+            @media screen and ($m-extra-large) {
+                margin: 0 20% 0 0;
+            }
+        }
+    }
+}
+
+.copy {
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and ($m-extra-small) {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0 0;
+    }
+
+    @media screen and ($m-small) {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0 0;
+    }
+
+    @media screen and ($m-medium) {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0 0;
+    }
+
+    @media screen and ($m-large) {
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+    }
+
+    &__item {
+        @include font(16px, $f-sans-light, $c-white);
+        line-height: 26px;
+        text-decoration: none;
+
+        &:not(:first-child) {
+            @media screen and ($m-extra-small) {
+                margin: 0;
+            }
+
+            @media screen and ($m-small) {
+                margin: 0;
+            }
+
+            @media screen and ($m-large) {
+                margin: 0 0 0 6%;
+            }
+        }
+    }
+}

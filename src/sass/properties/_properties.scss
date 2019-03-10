@@ -1,0 +1,187 @@
+.properties {
+    @media screen and ($m-extra-small) {
+        padding: 50px 0;
+    }
+
+    @media screen and ($m-small) {
+        padding: 50px 10px 50px;
+    }
+
+    @media screen and ($m-medium) {
+        padding: 50px 4% 50px;
+    }
+
+    @media screen and ($m-large) {
+        padding: 75px 5% 65px;
+    }
+
+    @media screen and ($m-extra-large) {
+        padding: 75px 6% 65px;
+        background: url("../img/properties/bg.svg") no-repeat left -7% bottom 20%;
+        background-size: 50%;
+    }
+
+    &_woman {
+        background: $c-white;
+
+        @media screen and ($m-extra-small) {
+            padding: 50px 0;
+        }
+
+        @media screen and ($m-small) {
+            padding: 50px 10px;
+        }
+
+        @media screen and ($m-medium) {
+            padding: 50px 4%;
+        }
+
+        @media screen and ($m-large) {
+            padding: 75px 5%;
+        }
+
+        @media screen and ($m-extra-large) {
+            padding: 160px 6% 260px;
+            background: $c-white url("../img/properties/bg_2.png") no-repeat right 6% bottom;
+            background-size: 44%;
+        }
+    }
+
+    &-desc {
+        max-width: 470px;
+
+        &__text {
+            margin: 0 0 30px;
+
+            @include font(16px, $f-sans-light, $c-gray);
+            line-height: 26px;
+        }
+    }
+
+    &-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 150px 0 0;
+
+        @media screen and ($m-extra-small) {
+            margin: 50px 0 0;
+        }
+
+        @media screen and ($m-small) {
+            margin: 75px 0 0;
+        }
+
+        @media screen and ($m-medium) {
+            margin: 75px 0 0;
+        }
+
+        @media screen and ($m-large) {
+            margin: 75px 0 0;
+        }
+
+        @media screen and ($m-extra-large) {
+            margin: 150px 0 0;
+        }
+
+        &-links {
+            display: flex;
+
+            @media screen and ($m-extra-small) {
+                flex-direction: column;
+            }
+
+            &__item {
+                @media screen and ($m-extra-small) {
+                    width: 100%;
+                    margin: 0 0 20px;
+                    text-align: center;
+                }
+
+                & + .properties-box-links__item {
+                    @media screen and ($m-extra-small) {
+                        margin: 0 0 20px;
+                    }
+
+                    @media screen and ($m-small) {
+                        margin: 0 0 0 20px;
+                    }
+                }
+
+                &:nth-child(1) {
+                    @extend %btn-blue;
+                }
+
+                &:nth-child(2) {
+                    @extend %btn-transparent;
+                    color: $c-border;
+                    border: 1px solid $c-border;
+                }
+            }
+        }
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 0 110px;
+
+        @media screen and ($m-extra-small) {
+            width: 100%;
+        }
+
+        &-img {
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 67px;
+            height: 67px;
+            margin: 0 0 20px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: -1;
+                width: 160px;
+                height: 160px;
+                background: #F9FAFB;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        &-head {
+            @extend %ellipsis;
+
+            &__title {
+                @include font(18px, $f-bold, $c-dark-blue);
+                line-height: 25px;
+            }
+        }
+
+        &-desc {
+            max-width: 265px;
+
+            &__text {
+                margin: 0;
+                @include font(16px, $f-sans-light, $c-gray);
+                line-height: 28px;
+            }
+        }
+    }
+
+    &-btn {
+        &__link {
+            @extend %btn-blue;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+//bootstrap style
+@import "~bootstrap/scss/bootstrap";
+
+//common style
+@import "common/variables";
+@import "common/fonts";
+@import "common/mixin";
+@import "common/abstract";
+@import "common/basic";
+
+//sections
+@import "header/header";
+@import "main-slider/slider";
+@import "main-slider/form";
+@import "main-slider/carousel-box";
+@import "properties/properties";
+@import "cards/cards";
+@import "footer/footer";

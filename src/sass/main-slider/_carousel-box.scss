@@ -1,0 +1,137 @@
+.carousel-box {
+    position: absolute;
+    top: 19%;
+    left: 0;
+    margin-right: calc(5% + 15px);
+    margin-left: calc(5% + 15px);
+
+    @media screen and ($m-extra-small) {
+        top: 19%;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    @media screen and ($m-small) {
+        top: 19%;
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+
+    @media screen and ($m-medium) {
+        top: 25%;
+        margin-right: calc(4% + 15px);
+        margin-left: calc(4% + 15px);
+    }
+
+    @media screen and ($m-large) {
+        top: 19%;
+        margin-left: calc(6% + 15px);
+        margin-right: 0;
+        max-width: 660px;
+    }
+
+    &-head {
+        &__title {
+            @extend %title-default;
+
+            @media screen and ($m-extra-small) {
+                @include font(32px, $f-bold, $c-white);
+                line-height: 40px;
+            }
+
+            @media screen and ($m-small) {
+                @include font(36px, $f-bold, $c-white);
+                line-height: 40px;
+            }
+
+            @media screen and ($m-medium) {
+                @include font(48px, $f-bold, $c-white);
+                line-height: 60px;
+            }
+
+            @media screen and ($m-large) {
+                @include font(60px, $f-bold, $c-white);
+                line-height: 81px;
+            }
+        }
+    }
+
+    &-desc {
+        max-height: 200px;
+        margin: 15px 0 30px;
+
+        overflow: hidden;
+
+        &__text {
+            margin: 0;
+
+            @media screen and ($m-extra-small) {
+                @include font(16px, $f-regular, $c-white);
+                line-height: 20px;
+            }
+
+            @media screen and ($m-small) {
+                @include font(18px, $f-regular, $c-white);
+                line-height: 30px;
+            }
+
+            @media screen and ($m-large) {
+                @include font(25px, $f-regular, $c-white);
+                line-height: 40px;
+            }
+        }
+    }
+
+    &-links {
+        display: flex;
+
+        @media screen and ($m-extra-small) {
+            flex-direction: column;
+        }
+
+        &__item {
+            @media screen and ($m-extra-small) {
+                width: 100%;
+                margin: 0 0 20px;
+                text-align: center;
+            }
+
+            & + .carousel-box-links__item {
+                @media screen and ($m-extra-small) {
+                    margin: 0 0 20px;
+                }
+
+                @media screen and ($m-small) {
+                    margin: 0 0 0 20px;
+                }
+            }
+
+            &:nth-child(1) {
+                @extend %btn-blue;
+            }
+
+            &:nth-child(2) {
+                @extend %btn-transparent;
+            }
+        }
+    }
+}
+
+.carousel-item {
+    img {
+        @media screen and ($m-extra-small) {
+            object-fit: cover;
+            min-height: 600px;
+        }
+
+        @media screen and ($m-small) {
+            object-fit: cover;
+            min-height: 600px;
+        }
+
+        @media screen and ($m-medium) {
+            object-fit: contain;
+            min-height: 1px;
+        }
+    }
+}

@@ -1,0 +1,147 @@
+.cards {
+    @media screen and ($m-extra-small) {
+        padding: 18% 0 5%;
+        background: linear-gradient(13.83deg, #233488 -44.1%, #2CABE5 97.88%);
+    }
+
+    @media screen and ($m-small) {
+        padding: 50px 10px 35px;
+        background: linear-gradient(13.83deg, #233488 -44.1%, #2CABE5 97.88%);
+    }
+
+    @media screen and ($m-medium) {
+        padding: 50px 4% 35px;
+    }
+
+    @media screen and ($m-large) {
+        padding: 18% 5% 5%;
+        background: url(../img/maska.svg) no-repeat;
+        background-position: center top 90%;
+    }
+
+    @media screen and ($m-extra-large) {
+        padding: 18% 6% 6%;
+        background-position: center top 40%;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 35px 30px;
+
+        border-radius: 10px;
+        background-color: $c-white;
+
+        @media screen and ($m-extra-small) {
+            padding: 20px 15px;
+            margin: 0 0 15px;
+        }
+
+        @media screen and ($m-small) {
+            padding: 20px 15px;
+            margin: 0 0 25px;
+        }
+
+        @media screen and ($m-large) {
+            padding: 30px 50px 30px;
+            margin: 0 0 30px;
+        }
+
+        @media screen and ($m-extra-large) {
+            padding: 30px 50px 30px;
+            margin: 0;
+        }
+
+        &-img {
+            position: relative;
+
+            width: 100%;
+            max-width: 210px;
+            padding: 53% 0 0;
+
+            @media screen and ($m-extra-small) {
+                padding: 40% 0 0;
+            }
+
+            img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                max-width: 100%;
+                max-height: 100%;
+                margin: auto;
+            }
+        }
+
+        &-head {
+            @extend %ellipsis;
+            margin: 35px 0 20px;
+
+            &__title {
+                @extend %title-default;
+                @include font(18px, $f-bold, $c-blue);
+                line-height: 26px;
+            }
+        }
+
+        &-desc {
+            max-height: 135px;
+            overflow: hidden;
+
+            &__text {
+                @include font(16px, $f-sans-light, $c-gray);
+                line-height: 26px;
+            }
+        }
+
+        &-price {
+            @extend %ellipsis;
+            margin: 15px 0 0;
+
+            &__text {
+                @include font(16px, $f-semibold, $c-price);
+            }
+        }
+
+        &-link {
+            @extend %ellipsis;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 200px;
+            margin: 35px 0 0;
+            height: 47px;
+
+            border: 1px solid transparent;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all .25s ease;
+
+            &:hover {
+                border-color: $green;
+                background: $green;
+                text-decoration: none;
+
+                .cards-item-link__text {
+                    color: $c-white;
+                }
+
+                svg {
+                    fill: $c-white;
+                }
+            }
+
+            &__text {
+                margin: 0 10px 0 0;
+                @include font(18px, $f-bold, $c-green);
+            }
+
+            svg {
+                fill: $c-green;
+            }
+        }
+    }
+}
