@@ -29,7 +29,7 @@ Please ensure that the release file is unpacked in a directory accessible via th
 
 	src/  		project root folder
 	src/img  	folder for images
-	src/fonts   folder for fonts
+	src/fonts   	folder for fonts
 	src/sass  	folder for SCSS style
 	src/js  	folder for JavaScript files
 	src/index.js  	webpack entry point
